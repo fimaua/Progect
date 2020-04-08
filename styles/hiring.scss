@@ -1,30 +1,25 @@
-.order {
+.hiring {
     padding: 50px 15px;
-    background-color: $color-light;
     @include for-large-up {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        padding: 73px 0;
-    }
-    &__illustration {
-        @include for-large-up {
-            margin-right: 121px;
-        }
-    }
-    &__details {
-        @include for-large-up {
-            max-width: 555px;
-        }
+        padding: 0;
+        margin: 106px auto 110px auto;
+        max-width: 750px;
     }
     &__title {
         margin: 0;
         font-weight: 700;
         font-size: 40px;
         line-height: 40px;
+        text-align: center;
         letter-spacing: -0.357143px;
-        margin-top: 40px;
         @include for-large-up {
+            font-size: 56px;
+            line-height: 56px;
+            text-align: center;
             letter-spacing: -0.5px;
         }
     }
@@ -33,50 +28,36 @@
         line-height: 34px;
         margin: 0;
         margin-top: 18px;
-        @include for-large-up {
-            margin-top: 18px;
-        }
-    }
-    &__form {
-        @include for-large-up {
-            display: flex;
-            margin-top: 26px;
-        }
-    }
-    &__email {
-        font-size: 18px;
-        line-height: 13px;
-        margin-top: 40px;
-        width: 100%;
-        height: 48px;
-        border-radius: 2px;
-        border: 1px solid $border-color;
         text-align: center;
         @include for-large-up {
-            margin-top: 0;
-        }
-        &::placeholder {
-            color: $text-color-dark;
+            margin-top: 20px;
+            width: 555px;
         }
     }
     &__button {
-        margin-top: 12px;
+        margin-top: 30px;
         width: 100%;
         @include for-large-up {
-            width: 160px;
-            margin-top: 0;
-            margin-left: 10px;
-            flex-shrink: 0;
+            margin-top: 28px;
+            width: 247px;
         }
     }
-    &__terms {
-        margin-top: 10px;
-        font-size: 14px;
-        line-height: 22px;
-        color: $text-color-light-grey;
+    &__vacancies {
+        margin-top: 39px;
+        @include for-large-up {
+            width: 100%;
+            margin-top: 110px;
+        }
     }
-    &__terms-link {
-        color: $text-color-blue;
+    &__vacancy {
+        margin-top: 15px;
+        @include for-large-up {
+            margin-top: 30px;
+            height: 80px;
+        }
+        &:first-child {
+            margin-top: 0;
+        }
     }
 }
 
