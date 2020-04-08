@@ -8,9 +8,13 @@
 @import 'header.scss';
 @import 'headline.scss';
 @import 'inbox.scss';
+@import 'communication.scss';
 @import 'audience.scss';
+@import 'feedback.scss';
+@import 'hiring.scss';
 @import 'order.scss';
 @import 'tips.scss';
+
 * {
     box-sizing: border-box;
 }
@@ -32,5 +36,5 @@ html {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-    }
+    }    
 }
